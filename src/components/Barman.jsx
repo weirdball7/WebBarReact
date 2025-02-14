@@ -94,6 +94,7 @@ const showSoppingCart = (shoppingCart) => {
 }
 
 const updateShoppingCart = (shoppingCart, item) => {
+    item.quantity = item.quantity - 1;
     shoppingCart.push(item);
     console.log(shoppingCart)
     return shoppingCart;
